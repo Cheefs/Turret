@@ -6,7 +6,7 @@ public class CannonModel {
 
     public Enum_CannonTipe CannonTipe { get; private set; }
 
-    public BulletModel BulletTipe { get; set; }
+    public BulletModel BulletModel { get; set; }
 
     public float Overheat { get; private set; }
 
@@ -16,7 +16,6 @@ public class CannonModel {
     public CannonModel()
     {
         CannonTipe = Enum_CannonTipe.FireCannon;
-        BulletTipe = BulletTipe;
         // Debug.Log("Создана турель типа FireBarrel");   (проверка инициализации турелей)
     }
 
@@ -28,7 +27,6 @@ public class CannonModel {
 
     public void Shoot()
     {
-        Debug.Log("Тип снаряда:");
-        Debug.Log(BulletTipe);
+        Debug.Log("Пиу");
     }
 }

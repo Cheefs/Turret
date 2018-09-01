@@ -34,7 +34,7 @@ public class MouseLook
         float yRot = Input.GetAxis("Mouse X") * XSensitivity;
         float xRot = Input.GetAxis("Mouse Y") * YSensitivity;
 
-        Debug.Log(Input.GetAxis("Mouse X"));
+       // Debug.Log(Input.GetAxis("Mouse X"));
 
         m_CameraTargetRot *= Quaternion.Euler(0f, yRot, 0f);
         m_HorizontalCameraRotation *= Quaternion.Euler(-xRot, 0f, 0f);
