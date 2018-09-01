@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Unity_Cannon : MonoBehaviour {
+public class CannonUnity : BaseObject {
 
     //перенесён в MainManager
 
