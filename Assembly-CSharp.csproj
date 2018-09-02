@@ -66,8 +66,9 @@
     <Compile Include="Assets\Scripts\C_Scripts\Enum_CannonTipe.cs" />
     <Compile Include="Assets\Scripts\C_Scripts\Enum_DamageTipe.cs" />
     <Compile Include="Assets\Scripts\C_Scripts\Base_Controller.cs" />
+    <Compile Include="Assets\Scripts\C_Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\Unity_Base.cs" />
-    <Compile Include="Assets\Scripts\C_Scripts\PlayerBaseModel.cs" />
+    <Compile Include="Assets\Scripts\C_Scripts\Base_Model.cs" />
     <Compile Include="Assets\Scripts\C_Scripts\TurretModel.cs" />
     <Compile Include="Assets\Scripts\MainManager.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\MouseLook.cs" />
