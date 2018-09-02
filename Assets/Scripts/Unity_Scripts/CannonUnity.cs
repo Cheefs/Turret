@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CannonUnity : BaseObject {
 
+    protected override void Awake()
+    {
+        base.Awake();
+    }
     //перенесён в MainManager
 
     //public CannonModel cannonModel;

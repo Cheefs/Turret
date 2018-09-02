@@ -8,7 +8,7 @@ public class TurretUnity : BaseObject
 
     private TurretModel turretModel;
 
-    private new void Awake()
+    protected override void Awake()
     {
         base.Awake();
         turretModel = new TurretModel();

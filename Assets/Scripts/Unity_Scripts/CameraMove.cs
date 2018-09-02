@@ -12,8 +12,9 @@ public class CameraMove : BaseObject
 
     private MouseLook mouseLook;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         mouseLook = new MouseLook();
         mouseLook.Init(MainCamera.transform, HorizontalCameraRotationObject.transform);
     }

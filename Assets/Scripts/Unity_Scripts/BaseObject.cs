@@ -30,7 +30,7 @@ public abstract class BaseObject : MonoBehaviour
         }
     }
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         GameObject = gameObject;
         Debug.Log(GameObject.name);

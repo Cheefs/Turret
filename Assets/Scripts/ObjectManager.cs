@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ObjectManager : MonoBehaviour
 {
-    public GameObject TurretObject { get; private set; }
+    public TurretUnity TurretUnity { get; private set; }
 
     void Awake()
     {
-        TurretObject = gameObject.transform.Find("Turret").GetComponentInChildren<TurretUnity>().gameObject;
+        TurretUnity = GetComponentInChildren<TurretUnity>();
     //    Debug.Log(TurretObject.name);
     }
 }
