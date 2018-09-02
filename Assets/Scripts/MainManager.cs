@@ -5,15 +5,15 @@ using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour {
 
-
-    public PlayerBase _base;
-    public Slider slider;
+    public GameObject Base { get; private set; }
+    public Base_Model playerBaseModel;
 
     public GameObject TurretObject { get; private set; }
 
     public GameObject[] CannonObjects { get; private set; }
 
     public TurretModel turretModel;
+
 
     [SerializeField] public Camera MainCamera;
 
@@ -24,7 +24,8 @@ public class MainManager : MonoBehaviour {
 
     void Start () {
 
-        _base = new PlayerBase(slider);
+        Base = gameObject.GetComponentInChildren<Unity_Base>().gameObject;
+        playerBaseModel = new Base_Model();
 
         TurretObject = gameObject.GetComponentInChildren<Unity_Turret>().gameObject;
         turretModel = new TurretModel();
@@ -54,8 +55,6 @@ public class MainManager : MonoBehaviour {
 
     private void Update()
     {
-        _base.RegenerateHp();
-
         RotateView();
     }
 
