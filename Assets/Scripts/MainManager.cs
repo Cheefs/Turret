@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainManager : MonoBehaviour {
+
+
+    public PlayerBase _base;
+    public Slider slider;
 
     public GameObject TurretObject { get; private set; }
 
@@ -18,6 +23,8 @@ public class MainManager : MonoBehaviour {
 
 
     void Start () {
+
+        _base = new PlayerBase(slider);
 
         TurretObject = gameObject.GetComponentInChildren<Unity_Turret>().gameObject;
         turretModel = new TurretModel();
@@ -47,6 +54,8 @@ public class MainManager : MonoBehaviour {
 
     private void Update()
     {
+        _base.RegenerateHp();
+
         RotateView();
     }
 
