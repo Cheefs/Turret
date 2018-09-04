@@ -641,6 +641,7 @@
     <Compile Include="Assets\Scripts\Unity_Scripts\BaseObject.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\CannonUnity.cs" />
+    <Compile Include="Assets\Scripts\Unity_Scripts\HorizontalRotateIndicator.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Unity_Scripts\TurretUnity.cs" />
   </ItemGroup>

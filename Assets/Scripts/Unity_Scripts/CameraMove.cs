@@ -4,11 +4,7 @@ using UnityEngine;
 
 public class CameraMove : BaseObject
 {
-    [SerializeField]
-    private Camera MainCamera;
-
-    [SerializeField]
-    private GameObject HorizontalCameraRotationObject;
+    private HorizontalRotateIndicator HorizontalCameraRotationObject;
 
     private MouseLook mouseLook;
 
@@ -16,16 +12,12 @@ public class CameraMove : BaseObject
     {
         base.Awake();
         mouseLook = new MouseLook();
-        mouseLook.Init(MainCamera.transform, HorizontalCameraRotationObject.transform);
+        HorizontalCameraRotationObject = GetComponentInParent<HorizontalRotateIndicator>();
+        mouseLook.Init(Transform, HorizontalCameraRotationObject.Transform);
     }
 
-    private void Update()
+    public void RotateView()
     {
-        RotateView();
-    }
-
-    private void RotateView()
-    {
-        mouseLook.LookRotation(MainCamera.transform, HorizontalCameraRotationObject.transform);
+        mouseLook.LookRotation(Transform, HorizontalCameraRotationObject.Transform);
     }
 }
